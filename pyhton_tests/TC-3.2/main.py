@@ -13,4 +13,4 @@ driver.find_element(By.ID, "mod-rscontact-email-91").send_keys("november@yopmail
 driver.find_element(By.ID, "mod-rscontact-submit-btn-91").click()
 if driver.find_element(By.ID, "mod-rscontact-submit-btn-91"):print("\033[31m{}\033[0m".format("FAIL"))
 time.sleep(1)
-driver.save_screenshot("TC-1.png")
+driver.save_screenshot("TC-3.2.png")
