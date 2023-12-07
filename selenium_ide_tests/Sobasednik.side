@@ -1,0 +1,49 @@
+{
+  "id": "56dc89df-b313-494f-8129-e22a05156824",
+  "version": "2.0",
+  "name": "Sobasednik",
+  "url": "https://guru.qahacking.ru/",
+  "tests": [{
+    "id": "1eb0fb76-e325-4f8f-9f1a-c385cdb7e592",
+    "name": "Отправка письма на электронную почту при заполнении обязательного поля \"Email\" валидными данными",
+    "commands": [{
+      "id": "2cd38c4a-c8cf-41f9-912d-2dbe96b45503",
+      "comment": "Перейти на тестовый стенд ",
+      "command": "open",
+      "target": "https://guru.qahacking.ru/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "91950c35-f10a-4f88-ab40-f42a7cda5a41",
+      "comment": "Прокрутить курсором вниз до футера сайта",
+      "command": "executeScript",
+      "target": "window.scrollTo(0,5000)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3a03ee6b-1101-48e0-b2a4-1381c821a88b",
+      "comment": "Ввести валидные данные в поле \"E-mail*\"",
+      "command": "type",
+      "target": "id=mod-rscontact-email-91",
+      "targets": [],
+      "value": "november@yopmail.com"
+    }, {
+      "id": "3c90c5d2-c3bc-4691-bfbc-877188bf493f",
+      "comment": "Нажать кнопку \"Send\"",
+      "command": "click",
+      "target": "id=mod-rscontact-submit-btn-91",
+      "targets": [],
+      "value": "button"
+    }]
+  }],
+  "suites": [{
+    "id": "797378d8-5004-41d5-9bc6-a5b43d461d69",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["1eb0fb76-e325-4f8f-9f1a-c385cdb7e592"]
+  }],
+  "urls": ["https://www.seleniumhq.org/", "https://guru.qahacking.ru/"],
+  "plugins": []
+}
